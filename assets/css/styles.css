@@ -1,0 +1,78 @@
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid orange;
+    position: relative;
+}
+
+
+
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: red;
+    border: 2px solid red;
+}
+
+.progress.active .progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+.cajones > .row::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #c495f0;
+    border: 2px solid #c495f0;
+}
+
+.profesion-detalles {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid rgba(154, 18, 179, 1);
+    position: relative;
+}
+
+.profesion-detalles::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #c495f0;
+    border: 2px solid #c495f0;
+}
+
+.profesion-detalles > h3 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #c495f0;
+    margin-bottom: 10px;
+}
+
+.rango-anyos {
+    font-size: 16px;
+    background: rgba(241, 231, 254, 1);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+}
