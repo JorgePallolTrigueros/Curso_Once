@@ -75,4 +75,10 @@
     font-weight: bold;
     color: white;
 }
+
+
+
+ul ,li{
+    list-style:none;
 }
+
