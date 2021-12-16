@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -96,80 +99,28 @@
           <div class="col-sm">
 
             <div class="profesion">
-               
-                <div class="profesion-detalles">
-
-                    <h3 >Clase 2 modulo CSS</h3>
-                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                        
-                        <div class="card-body">
-                          <h5 class="card-title">Nota Importante</h5>
-                          <p class="card-text">
-                            <h6 style="color: white;"> Slack Ponerla en favoritos<br/>
-                            JSB02ON Lugar de trabajo<br/>
-                            jorgepallol1@gmail.com<br/>
-                            Kojinanjo1@<br/>
-                            Ejercicio<br/>
-                            https://flukeout.github.io/</h6></p>
-                        </div>
-                    </div>
-
-
-
-
-<h4>Selector descendiente directos</h4>
-<hr>
-Si se pone el padre y el hijo de esta manera</br>
-main > h3 {tex-decoration:underline} </br>
-</p>
-
-    <h4>Abyacentes</h4><hr>
-Si se pone de esta manera </br>
-.parrafo + .titulo {}</br>
-Es cuando estan de forma continua</br>
-
-< p class="parrafo" >< p class="titulo" >
-
-</p>&nbsp;</p>
-
-
-<h4>Jerarquía en el CSS "ESPECIDAD"</h4><hr>
-
-<table class="table table-bordered">
-    <thead class="table-secondary">
-<tr>
-<th scope="col">style</td><th scope="col">id</td><th scope="col">Seudoclases</td><th scope="col">class</td><th scope="col"> elemento</td><th scope="col"> Seudo-elemento</td>
-    </tr> 
-    </thead>
-    <tr>
-<td>< style>< /style ></td><td>(#) </td> <td>:--</td><td>.--</td><td> < a >< /a ></td><td> ::</td>
-</tr><tr>
-<td>1000 puntos </td><td>100 puntos </td><td>10 puntos</td><td>10 puntos</td><td> 1 puntos </td><td> 1 puntos </td>
-</tr>
-</table>
-   
-<ul><li>El atributo importa en el css es mas importante que Style</li>
-    <li>La regla del ultimo elemento es la que prevalecera</li>
-</ul>
-         
-<h4>Unidades Css</h4><hr>
-hay muchas unidades para dar valor al elemento</br>
-<b>em:</b>  Es relativo al tamaño del padre del elemento</br> 
-<b>rem:</b> esta definido por el elemento Html</br> 
-<b>ivw:</b> 1% de la anchura del viewport (Donde esta siendo visuanalizada )</br> 
-<b>%</b>Son referente al tamaño del elemento padre</br> 
-
-
-
-
-    </div>
-		</div>
+<form>
+    <fieldset>
+      <legend>Información Personal</legend>
+      <label for="nombre">Nombre:</label>
+      <input name="nombre" id="nombre" type="text" tabindex="1" />
+      <label for="apellidos">Apellidos:</label>
+      <input name="apellidos" id="apellidos" type="text" tabindex="2" />
+    </fieldset>
+  
+    <fieldset>
+      <legend>Edad</legend>
+      <label><input type="checkbox" tabindex="20" name="edad" value="20-39" /> 20-39</label>
+      <label><input type="checkbox" tabindex="21" name="edad" value="40-59" /> 40-59</label>
+      <label><input type="checkbox" tabindex="22" name="edad" value="60-79" /> 60-79</label>
+    </fieldset>
+  </form>
 
 
 
 
    
-    </div>
+</div>
 
 
 
@@ -177,24 +128,24 @@ hay muchas unidades para dar valor al elemento</br>
 
 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <footer class="footer-basic">
-                    <div class="social"><a href="#"><i class="icon ion-trophy"></i></a><a href="#"><i class="icon ion-minus-circled"></i></a></div>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#">Phyton ¿Que es?</a></li>
-                        <li class="list-inline-item"><a href="#">Proyectos</a></li>
-                        <li class="list-inline-item"><a href="#">Empresas&nbsp;</a></li>
-                        <li class="list-inline-item"><a href="#">Calendario</a></li>
-                        <li class="list-inline-item"><a href="#">Calificaciones</a></li>
-                    </ul>
-                    <p class="copyright">Jorge Pallol Trigueros // CLASE PHYTON&nbsp;</p>
-                </footer>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <footer class="footer-basic">
+                <div class="social"><a href="#"><i class="icon ion-trophy"></i></a><a href="#"><i class="icon ion-minus-circled"></i></a></div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Phyton ¿Que es?</a></li>
+                    <li class="list-inline-item"><a href="#">Proyectos</a></li>
+                    <li class="list-inline-item"><a href="#">Empresas&nbsp;</a></li>
+                    <li class="list-inline-item"><a href="#">Calendario</a></li>
+                    <li class="list-inline-item"><a href="#">Calificaciones</a></li>
+                </ul>
+                <p class="copyright">Jorge Pallol Trigueros // CLASE PHYTON&nbsp;</p>
+            </footer>
         </div>
     </div>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</div>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
