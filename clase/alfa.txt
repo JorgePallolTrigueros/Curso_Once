@@ -10,3 +10,7 @@ El comic de 3 cuevos
 El juego de Yugio
 
 Pasar de listas al estilo de clase de H1
+
+
+https://www.cssscript.com/css-layouts-components-patterns/
+

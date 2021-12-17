@@ -31,13 +31,8 @@
     <link rel="stylesheet" href="../assets/css/styles.css">
 
     <style>
-        .center {
-           
-            text-align: center;
-            }
 
-
-            
+        
 a {
   text-decoration: none;
 
@@ -68,6 +63,10 @@ a.menu_izquierda:hover {
 a.menu_izquierda:active {
   text-decoration: none;
 }
+        .center {
+           
+            text-align: center;
+            }
     </style>
 </head>
 
@@ -132,65 +131,93 @@ a.menu_izquierda:active {
                
                 <div class="profesion-detalles">
 
-                    <h3 >Clase 2 modulo CSS</h3>
-                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                        
-                        <div class="card-body">
-                          <h5 class="card-title">Nota Importante</h5>
-                          <p class="card-text">
-                            <h6 style="color: white;"> Slack Ponerla en favoritos<br/>
-                            JSB02ON Lugar de trabajo<br/>
-                            jorgepallol1@gmail.com<br/>
-                            Kojinanjo1@<br/>
-                            Ejercicio<br/>
-                            https://flukeout.github.io/</h6></p>
-                        </div>
-                    </div>
+                    <h3 >Clase 3 modulo CSS</h3>
 
 
 
 
-<h4>Selector descendiente directos</h4>
+
+<h4>COLOR</h4>
 <hr>
-Si se pone el padre y el hijo de esta manera</br>
-main > h3 {tex-decoration:underline} </br>
-</p>
+Las formas de llamar al color son:
 
-    <h4>Abyacentes</h4><hr>
-Si se pone de esta manera </br>
-.parrafo + .titulo {}</br>
-Es cuando estan de forma continua</br>
-
-< p class="parrafo" >< p class="titulo" >
-
-</p>&nbsp;</p>
-
-
-<h4>Jerarquía en el CSS "ESPECIDAD"</h4><hr>
-
-<table class="table table-bordered">
-    <thead class="table-secondary">
-<tr>
-<th scope="col">style</td><th scope="col">id</td><th scope="col">Seudoclases</td><th scope="col">class</td><th scope="col"> elemento</td><th scope="col"> Seudo-elemento</td>
-    </tr> 
-    </thead>
-    <tr>
-<td>< style>< /style ></td><td>(#) </td> <td>:--</td><td>.--</td><td> < a >< /a ></td><td> ::</td>
-</tr><tr>
-<td>1000 puntos </td><td>100 puntos </td><td>10 puntos</td><td>10 puntos</td><td> 1 puntos </td><td> 1 puntos </td>
-</tr>
-</table>
-   
-<ul><li>El atributo importa en el css es mas importante que Style</li>
-    <li>La regla del ultimo elemento es la que prevalecera</li>
+<ul>
+    <li>Texto:Rojo</li>
+    <li>Rgb: Rgb(155,55,22) </li>
+    <li>Rgba: Rgb(155,55,22,1) siendo a, la forma de la opacidad del 0 a 1</li>
+    <li>Hexagesimal: #334455 (Los los primeros equivale al rojo, luego al verde...)</li>   
 </ul>
-         
-<h4>Unidades Css</h4><hr>
-hay muchas unidades para dar valor al elemento</br>
-<b>em:</b>  Es relativo al tamaño del padre del elemento</br> 
-<b>rem:</b> esta definido por el elemento Html</br> 
-<b>ivw:</b> 1% de la anchura del viewport (Donde esta siendo visuanalizada )</br> 
-<b>%</b>Son referente al tamaño del elemento padre</br> 
+
+Tamblien hay generadlores olnllline de clollores que te lpuleden dar el coldligol
+<ul>
+    <li><a href="https://www.css-gradient.com/">Gradilente</a></li>
+    <li><a href="https://www.colorzilla.com/gradient-editor/">Gradilente</a> </li>
+    <li><a href="https://mycolor.space/gradient?ori=to+left+top&hex=%23EC45AC&hex2=%23121249&sub=1">Gradiente</a></li>
+    <li><a href="https://cssgradient.io/">Gradilente</a></li>   
+</ul>
+
+<h4>TEXTO</h4>
+<hr>
+Las propiedades mas usadas:
+    <ul>
+        <li><b>color:</b> Hereditaria si el padre la tiene, por ejemplo un div h1 lo tendra</li>
+        <li><b>Font-family:</b> A traves de texto, se llama al tipo de letra "Open Sans"; </li>
+        <li><b>Font Size:</b> Define el tamaño y es hereditaria</li>
+        <li><b>text-decoration:none</b> -->Quitar o poner algo de decoracion en el texto</li>
+        <li><b>text-shadow(x,y,r,c):</b> x y (Cordenadas) r (Radio de difusion) C (color de la sombra)</li>
+        <li><b>Text-align:</b>Alineamiento del Texto:  -->Solo a bloques y las posibilidades son
+                <ul>
+                    <li>Left</li>
+                    <li>Right</li>
+                    <li>Justify</li>
+                    <li>Center</li>
+                </ul>
+        </li>
+        <li><b>Line-height:</b> La altura de lineas. "El Interlineado". Es hereditario</li>
+        <li><b>letter-spacing</b> Espacio entre lineas, se puede usar vlaores negativos</li>
+        <li><b>Word-spacing</b> Espacio entre palabras, se puede usar vlaores negativos</li>
+    </ul>
+
+
+    <h4>DIV (CAJITAS)</h4>
+    <hr>
+    Las propiedades mas usadas:
+        <ul>
+            <li><b>Whidth:</b> La anchura de la caja, se puede definir con medidas </li>
+            <li><b>height:</b> La altura de la caja, se puede definir con medidas </li>
+            <li><b>Padding:</b> Define el Margen interno
+                <ul>
+                    <li>padding-left</li>
+                    <li>padding-Right</li>
+                    <li>padding-Top</li>
+                    <li>padding-botton</li>
+                    <li>top right botton left</li>
+
+                </ul>
+            </li>
+            <li><b>Margin</b> Separacion entre cajas o con los elementos que le rodean, tiene los mismos lados que el div</li>
+            <li><b>Border</b> Sus parametros son
+                <ul>
+                        <li>Ancho</li>
+                        <li>Style</li>
+                        <li>Color</li>
+                        <li>Box-sizing:Border-box</li>
+                        <li>Box-sizing:Content-box</li>
+                    </ul>
+            </li>
+            <li><b>Line-height:</b> La altura de lineas. "El Interlineado". Es hereditario</li>
+            <li><b>letter-spacing</b> Espacio entre lineas, se puede usar vlaores negativos</li>
+            <li><b>Word-spacing</b> Espacio entre palabras, se puede usar vlaores negativos</li>
+        </ul>
+
+
+
+    <h4>EJERCICIOS</h4>
+    <hr>
+    <ul>
+        <li><a href="primerapagina.html">Ejercicio 1</a></li>
+ 
+    </ul>
 
 
 

@@ -1174,3 +1174,37 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+/*--------------------------------------------------------------
+# Enlaces
+--------------------------------------------------------------*/
+
+a {
+  text-decoration: none;
+
+}
+
+
+a.menu_izquierda {
+  text-decoration: none;
+}
+
+
+a.menu_izquierda {
+  text-decoration: none;
+}
+
+a.menu_izquierda:visited {
+  text-decoration: none;
+}
+
+a.menu_izquierda:focus {
+  text-decoration: none;
+}
+
+a.menu_izquierda:hover {
+  text-decoration: none;
+}
+
+a.menu_izquierda:active {
+  text-decoration: none;
+}

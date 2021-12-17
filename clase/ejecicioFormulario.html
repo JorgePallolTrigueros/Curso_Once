@@ -148,81 +148,63 @@ fieldset {
       <form>
         <fieldset>
           <legend>Datos Personales</legend>
-          <label for="nombre">Nombre:</label>
-          <input name="nombre" id="nombre" type="text" tabindex="1" />
-          <label for="apellidos">Apellidos:</label>
-          <input name="apellidos" id="apellidos" type="text" tabindex="2" />
+ 
+
+          <label>Fecha de Nacimiento</label>  
+          <input type="date"  placeholder="02/04/1978"name="fecha_usuario"/>
+         </p>
+          <label>Nombre</label>  
+          <input placeholder="Jorge Pallol" type="text" name="nombre"/>
+        </p>
+          <label>Genero</label>  
+          <select name="genero" id="genero">
+              <option value="Masculino">Masculino</option> 
+              <option value="Femenino">Femenino</option>
+          </select> 
         </fieldset>
       
+
+
+
+        <p></p>
         <fieldset>
-          <legend>Edad</legend>
-          <label><input type="checkbox" tabindex="20" name="edad" value="20-39" /> 20-39</label>
-          <label><input type="checkbox" tabindex="21" name="edad" value="40-59" /> 40-59</label>
-          <label><input type="checkbox" tabindex="22" name="edad" value="60-79" /> 60-79</label>
+          <legend>Estudios</legend>
+          <select name="educacion" id="education">
+            <option  selected value="La eso">La eso</option> 
+            <option value="Bachiller">Bachiller</option>
+            <option value="Graduado">Doctorado</option> 
+            <option value="Master">Master</option>
+        </select>    
         </fieldset>
+
+<p></p>
+        <fieldset>
+          <legend>Nivel</legend>
+          <label>Nivel</label>    
+          <select name="nivel">
+              <option value="Principante">Principante</option> 
+              <option value="Intermedio">Intermedio</option>
+              <option value="Avanzado">Avanzado</option> 
+          </select>    
+        </fieldset>
+
+
+
+
       </form>
 
 
       <hr>
 
 
-        <form>
-          
-      <div class="panel panel-primary">
-        <div class="panel-body">
-          <h3 class="text-on-pannel text-primary"><strong class="text-uppercase"> Datos Personales </strong></h3>
-          <p> 
-            <label>Fecha de Nacimiento</label>  
-            <input type="date"  placeholder="02/04/1978"name="fecha_usuario"/>
-           </p>
-            <label>Nombre</label>  
-            <input placeholder="Jorge Pallol" type="text" name="nombre"/>
-          </p>
-            <label>Genero</label>  
-            <select name="genero" id="genero">
-                <option value="Masculino">Masculino</option> 
-                <option value="Femenino">Femenino</option>
-            </select>    
-          </p>
-        </div>
-      </div>
-      <div>
+   
+  
+            
+            
+
+         
 
 
-        <div class="panel panel-primary">
-          <div class="panel-body">
-              <h3 class="text-on-pannel text-primary"><strong class="text-uppercase"> Educacion </strong></h3>
-              <p> 
-                <select name="educacion" id="education">
-                    <option  selected value="La eso">La eso</option> 
-                    <option value="Bachiller">Bachiller</option>
-                    <option value="Graduado">Doctorado</option> 
-                    <option value="Master">Master</option>
-                </select>    
-              </p>
-            </div>
-          </div>
-          <div>
-
-            <div class="panel panel-primary">
-              <div class="panel-body">
-                  <h3 class="text-on-pannel text-primary"><strong class="text-uppercase"> Nivel</strong></h3>
-                  <p> 
-              
-                 
-                    <label>Nivel</label>    
-                   <select name="nivel">
-                       <option value="Principante">Principante</option> 
-                       <option value="Intermedio">Intermedio</option>
-                       <option value="Avanzado">Avanzado</option> 
-                   </select>  
-                 
-              
-      
-                  </p>
-                </div>
-              </div>
-              <div>
 
 
      <button type="submit" class="btn btn-primary">Lanzar</button>
