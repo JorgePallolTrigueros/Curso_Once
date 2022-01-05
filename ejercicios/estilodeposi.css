@@ -1,0 +1,65 @@
+.logo{
+
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 30px;
+    z-index: 5;
+}
+
+.logo2{
+
+    position: absolute;
+    top:40%;
+    left:40%;
+    right: 40%;
+    bottom:40%;
+
+}
+
+
+
+.total{
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: coral;
+    justify-content: space-between;
+
+    }
+
+
+    
+body{
+    margin-top: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.barra{
+   
+    text-align: right;
+    margin-top: 0px;
+    height: 50px;
+}
+
+.listadeenlaces{
+height: 2.5;
+flex-grow: 4;
+padding: auto;
+}
+
+.enlace
+{
+    list-style: none;
+    display: inline;
+    margin: 0.5em;
+}
+
+.enlace a:hover
+{
+color:brown
+}
+

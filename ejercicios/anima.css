@@ -1,0 +1,95 @@
+
+.ClaseTitulo{
+
+display:flex;
+flex-direction:row;
+flex-wrap:nowrap;
+text-align: center;
+}
+
+
+
+
+.cabecera {
+    display:flex;
+    /* Para que el nav este en un lado y el logo en el otro */
+    justify-content:space-between;
+    
+    /* Para que el contenido este centrado en el header */
+    align-items:center;
+
+
+    width: 95%;
+    padding:0.5em;
+    border: 1px solid red;
+    margin:auto;
+}
+
+.menu {
+    height:50px;
+    width: 40%;
+    border: 1px solid white;
+    padding: 0.5em;
+
+}
+
+.logo {
+    width: 30px;
+    border: 1px solid white;
+    padding:0.5em;
+}
+
+.contenedor-principal {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+.principal {
+    margin: 0.5em;
+    width: 90vw;
+    border: 1px solid ;
+    text-align:center;
+    background-color: rgba(255,0,0,0.5);
+    height: 50vh;
+}
+
+.secundario {
+    width: 30vw;
+    text-align:center;
+    border: 1px solid grey;
+    height: 30em;
+}
+
+.alfa{
+
+color: cornsilk;
+text-align: center;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+.container{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    position: absolute;
+    width:100%;
+ height: 400px;
+    -webkit-border-bottom-right-radius: 50px;
+    -webkit-border-bottom-left-radius: 50px;
+    -moz-border-radius-bottomright: 50px;
+    -moz-border-radius-bottomleft: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+    display:flex;
+
+
+  }

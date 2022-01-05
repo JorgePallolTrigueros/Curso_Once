@@ -1,0 +1,84 @@
+/* Ejercicio 9 */
+body {
+    background: linear-gradient(to right, rgb(43, 10, 228), rgb(0, 4, 255));
+    color:white;
+    height:100vh;
+    width:100vw;
+}
+
+.formulario-contacto {
+    position:absolute;
+    top:20vh;
+    left: 35vw;
+    height: 60vh;
+    width: 30vw;
+    box-shadow:0px 0px 5px white;
+    background-color:white;
+    color:black;
+    font-weight:bold;
+
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding: 2em;
+
+}
+
+.formulario-contacto  * {
+    display:block;
+    
+}
+.formulario-contacto h2 {
+    text-align:center;
+    margin-bottom: 1em;
+}
+
+/* Ejercicio 12 */
+
+.formulario-contacto fieldset {
+    display:flex;
+    justify-content:flex-start;
+    border:none;
+}
+
+.formulario-contacto fieldset div {
+    margin-right: 1em;
+    width:50%;
+}
+
+input, textarea {
+    border: none;
+    border-radius: 0.25em;
+    box-shadow: 0px 0px 10px lightgrey;
+    padding:0.5em;
+    font-size:1.25em;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+[for="email"] {
+    margin-top:2em;
+}
+
+[type="email"] {
+    margin-bottom: 2em;
+    height: 3em;
+}
+
+.btn {
+    margin:2em;
+    font-size:1.25em;
+    padding: 1em;
+    background-color:rgb(43, 10, 228);
+    transition: background-color 0.2s ease-in; 
+    color:white;
+
+    border-radius: 0.25em;
+}
+
+.btn:hover {
+    background-color:rgb(0, 4, 255);
+}

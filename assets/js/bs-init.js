@@ -1,6 +1,7 @@
-$(document).ready(function(){
-	AOS.init();
-	$('[data-bss-hover-animate]')
-		.mouseenter( function(){ var elem = $(this); elem.addClass('animated ' + elem.attr('data-bss-hover-animate')) })
-		.mouseleave( function(){ var elem = $(this); elem.removeClass('animated ' + elem.attr('data-bss-hover-animate')) });
-});
+document.addEventListener('DOMContentLoaded', function() {
+
+	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bss-tooltip]'));
+	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+	  return new bootstrap.Tooltip(tooltipTriggerEl);
+	})
+}, false);

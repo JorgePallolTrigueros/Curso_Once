@@ -1,0 +1,89 @@
+.card {
+  margin: 0;
+  width: 750px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 0.75em;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-top {
+  border-radius: 10px 0 0 0;
+  background: red;
+}
+
+.card-top .card-img {
+  display: block;
+  height: 200px;
+  width: 500px;
+}
+
+.card-middle {
+  display: none;
+  background: #efefef;
+  padding: 2em 1em 1em 1em;
+  width: 750px;
+}
+
+.card-middle .more {
+  font-family: Open Sans;
+  font-weight: 400;
+}
+
+.card-bottom {
+  width: 750px;
+  background: #f7f7f7;
+  height: 70px;
+  border-radius: 0 0 10px 10px;
+}
+
+.card-bottom .card-title {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-weight: 100;
+}
+
+.circle-button {
+  margin-left: 0;
+  margin-top: 0;
+  bottom: 20px;
+  width: 70px;
+  height: 70px;
+  font-size: 1.5em;
+  color: #fff;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.275);
+  outline: none;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.circle-button .close {
+  transition: transform 400ms ease;
+}
+
+.circle-button:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.275);
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+  font-family: Work Sans;
+}
+
+.gridcontent {
+  width: 750px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.gridcontent1 {
+  display: grid;
+  grid-template-columns: 89% 11%;
+}
+
+.carddesc {
+  width: 470px;
+}
+

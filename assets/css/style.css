@@ -45,19 +45,9 @@ body::before {
   }
 }
 
-a {
-  color: #18d26e;
-  text-decoration: none;
-}
 
-a:hover {
-  color: #35e888;
-  text-decoration: none;
-}
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
-}
+
 
 /*--------------------------------------------------------------
 # Header
@@ -1178,33 +1168,83 @@ section .container {
 # Enlaces
 --------------------------------------------------------------*/
 
-a {
-  text-decoration: none;
 
+
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid orange;
+  position: relative;
 }
 
 
-a.menu_izquierda {
-  text-decoration: none;
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: red;
+  border: 2px solid red;
 }
 
-
-a.menu_izquierda {
-  text-decoration: none;
+.progress.active .progress-bar {
+  -webkit-transition: none !important;
+  transition: none !important;
 }
 
-a.menu_izquierda:visited {
-  text-decoration: none;
+.cajones > .row::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #c495f0;
+  border: 2px solid #c495f0;
 }
 
-a.menu_izquierda:focus {
-  text-decoration: none;
+.profesion-detalles {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid rgba(154, 18, 179, 1);
+  position: relative;
 }
 
-a.menu_izquierda:hover {
-  text-decoration: none;
+.profesion-detalles::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #c495f0;
+  border: 2px solid #c495f0;
 }
 
-a.menu_izquierda:active {
-  text-decoration: none;
+.profesion-detalles > h3 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #c495f0;
+  margin-bottom: 10px;
+}
+
+.rango-anyos {
+  font-size: 16px;
+  background: rgba(241, 231, 254, 1);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: white;
 }

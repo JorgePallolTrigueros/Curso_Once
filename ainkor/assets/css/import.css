@@ -1,0 +1,25 @@
+@media only screen and (max-width: 600px) {
+    
+    html {
+        background: white !important;
+    }
+    nav{
+        background: white !important;
+    }
+
+    #izquierda {
+        display: none;
+    }
+
+    #derecha {
+        display: none;
+    }
+    
+    #titulo {
+        margin-right: 0px !important;
+        margin-bottom: 0px !important;
+        margin-left: 0px !important;
+        font-size: 35px !important;
+    }
+
+}

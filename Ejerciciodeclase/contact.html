@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link href = "assets/css/contact.css" rel = "stylesheet" />
+    <link href = "assets/css/main.css" rel = "stylesheet" />
+
+</head>
+<body>
+
+    <header class = "cabecera">
+        <img src = "assets/img/favicon.png" class = "logo" alt  = "page logo"/>
+    
+        <nav class = "menu">
+          <ul>
+            <li class = "enlace"><a href = '#'>Principal</a></li>
+            <li class = "enlace"><a href = 'contact.html'>Contactanos</a></li>
+            <li class = "enlace"><a href = '#'>Equipo</a></li>
+            <li class = "enlace"><a href = '#'>Curriculum</a></li>
+          </ul>
+        </nav>
+      </header>
+    <!-- Ejercicio 11 crear el form -->
+    <form method = "GET" action = "" class = "formulario-contacto">
+        <h2>
+            ¡Contarme que vais a hacer!
+        </h2>
+        <fieldset>
+            <div>
+                <label for = "nombre">NOMBRE</label>
+                <input type = "text" name = "nombre" id = "nombre" required/>
+            </div>
+            <div>
+                <label for = "apellidos">APELLIDOS</label>
+                <input type = "text" name = "apellidos" id = "apellidos" required/>
+            </div>
+        </fieldset>
+
+        <label for = "email">EMAIL</label>
+        <input type = "email" name = "email"  required/>
+
+        <label for = "info">¿QUE VAS A HACER ESTAS VACACIONES?</label>
+        <textarea name="info" id=""></textarea>
+
+        <button type = "submit" class = "btn">Enviar</button>   
+    </form>
+    
+</body>
+</html>

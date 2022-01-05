@@ -1,0 +1,29 @@
+.total{
+padding-top: 0px;
+
+}
+
+
+.barra{
+    height: 10;
+    background-color: coral;
+    color: coral;
+}
+
+.listadeenlaces{
+height: 2.5;
+padding: auto;
+}
+
+.enlace
+{
+    list-style: none;
+    display: inline;
+    margin: 0.5em;
+}
+
+.enlace a:hover
+{
+color:brown
+}
+
