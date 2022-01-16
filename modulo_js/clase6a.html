@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" style="background: #212529;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>alfa 44</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="../assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="../assets/css/Navbar-Fixed-Side.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/Navbar-Fixed-Side.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/esiles1.css">
+
+
+    <style>
+
+        
+    </style>
+
+
+</head>
+
+<body style="background: rgb(33,37,41);">
+    <div class="container-fluid" style="background: #212529;">
+        <div class="row flex-column flex-sm-row wrapper min-vh-100">
+            <div class="col-12 col-sm-1 col-md-3 col-xxl-2 flex-shrink-1 p-0 bg-dark">
+               <iframe src="menujs.html" width="260" height="1600"  framebgorder="0"></iframe>
+            </div>
+
+
+            <div class="col" style=" background-color: rgb(255, 255, 255);">
+
+                <div class="row">
+                    <div class="col" style="transform-origin: center;height: 400px; background-color: rgb(255, 255, 255);">
+                        <div class="box">
+                                <img src="../assets/img/a1.jpg" class="center">
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="box1">
+
+<h4>Estos son los ejercios del dia 6</h4>
+<hr>
+
+
+
+
+
+
+ABRE LA CONSOLA
+
+
+
+
+
+
+
+
+
+<pre>
+    <code>
+
+
+"use strict";
+
+/**
+ * Utiliza los métodos funcionales de array para resolver las siguientes propuestas:
+ *
+ *  - 1. Obtén la suma total de todas las edades de las personas.
+ *  - 2. Obtén la suma total de todas las edades de las personas francesas.
+ *  - 3. Obtén un array con el nombre de todas las mascotas.
+ *  - 4. Obtén un array con las personas que tengan gato.
+ *  - 5. Obtén un array con los coches de los españoles.
+ *  - 6. Obtén un array con las personas que tengan un coche de la marca Ford.
+ *  - 7. ¡Bonus point! Obtén un array con todas las personas en el que cada persona tenga toda
+ *       la info de su coche. Ejemplo a continuación:
+ *
+ *      [
+ *          {
+ *               name: 'Berto',
+ *               country: 'ES',
+ *               age: 44,
+ *               car: {
+ *                  id: 'LU9286V',
+ *                  brand: 'Citroen',
+ *                  model: 'Xsara'
+ *               },
+ *               pet: {
+ *                   name: 'Moon',
+ *                   type: 'perro'
+ *               }
+ *           },
+ *           (...)
+ *      ]
+ *
+ *  Tip: en algún caso es probable que el método "nombreArray.find()" te sea de ayuda.
+ *
+ */
+
+"use strict";
+
+const persons = [
+  {
+    name: "Berto",
+    country: "ES",
+    age: 44,
+    car: "LU9286V",     
+    pet: {
+      name: "Moon",
+      type: "perro",
+    },
+  },
+  {
+    name: "Jess",
+    country: "UK",
+    age: 29,
+    car: "GB2913U",
+    pet: {
+      name: "Kit",
+      type: "gato",
+    },
+  },
+  {
+    name: "Tom",
+    country: "UK",
+    age: 36,
+    car: "GB8722N",
+    pet: {
+      name: "Rex",
+      type: "perro",
+    },
+  },
+  {
+    name: "Alexandre",
+    country: "FR",
+    age: 19,
+    car: "FT5386P",
+    pet: {
+      name: "Aron",
+      type: "gato",
+    },
+  },
+  {
+    name: "Rebeca",
+    country: "ES",
+    age: 32,
+    car: "MD4578T",
+    pet: {
+      name: "Carbón",
+      type: "gato",
+    },
+  },
+  {
+    name: "Stefano",
+    country: "IT",
+    age: 52,
+    car: "LP6572I",
+    pet: {
+      name: "Bimbo",
+      type: "perro",
+    },
+  },
+  {
+    name: "Colette",
+    country: "FR",
+    age: 22,
+    car: "FU8929P",
+    pet: {
+      name: "Amadeu",
+      type: "gato",
+    },
+  },
+];
+
+
+// - 1. Obtén la suma total de todas las edades de las personas.
+
+const sumaTotal = persons.reduce(function(a, b) {
+  return a + b.age;
+}, 0);
+console.log(`La suma total de todas las personas es: ${sumaTotal}`);
+
+
+// 2. Obtén la suma total de todas las edades de las personas francesas.
+
+const sumaTotalFranceses = persons.reduce(function(a, b) {
+  if (b.country === "FR") return a + b.age;
+  return a;
+}, 0);
+console.log(`La suma total de todas las personas es: ${sumaTotalFranceses}`);
+
+
+
+// -3. Obtén un array con el nombre de todas las mascotas.
+
+const mascotas = [];
+for (let i = 0; i < persons.length; i++) {
+  mascotas.push(persons[i].pet.name);
+}
+console.log(`Todas las mascotas son: ${mascotas}`);
+
+
+
+// 4. Obtén un array con las personas que tengan gato.
+
+/*const personasConGato = [];
+for (let i = 0; i < persons.length; i++) {
+  if(persons[i].pet.type==="gato") personasConGato.push(persons[i]);
+}*/
+const personasConGato = persons.filter(function(a) {
+  return a.pet.type === 'gato';
+});
+console.log(`Todas las personas con mascotas que son gatos son:`);
+console.log(personasConGato); 
+
+const cars = [
+  {
+    id: "LU9286V",
+    brand: "Citroen",
+    model: "Xsara",
+  },
+  {
+    id: "GB2913U",
+    brand: "Fiat",
+    model: "Punto",
+  },
+  {
+    id: "GB8722N",
+    brand: "Opel",
+    model: "Astra",
+  },
+  {
+    id: "FT5386P",
+    brand: "Ford",
+    model: "Focus",
+  },
+  {
+    id: "MD4578T",
+    brand: "Opel",
+    model: "Corsa",
+  },
+  {
+    id: "LP6572I",
+    brand: "Ford",
+    model: "Fiesta",
+  },
+  {
+    id: "FU8929P",
+    brand: "Fiat",
+    model: "Uno",
+  },
+];
+
+
+// - 5. Obtén un array con los coches de los españoles.
+const cochesEspañoles = [];
+for (let i = 0; i < persons.length; i++) {
+  if (persons[i].country === 'ES') {
+    const cocheEspañol = cars.filter(function(a) {
+      return a.id === persons[i].car;
+    })
+    cochesEspañoles.push(cocheEspañol[0]);
+  }
+}
+console.log("Los coches de las personas que son españolas son:");
+console.log(cochesEspañoles);
+
+
+// - 6. Obtén un array con las personas que tengan un coche de la marca Ford.
+const personasConFord = [];
+for (let i = 0; i < cars.length; i++) {
+  if (cars[i].brand === "Ford") {
+    const personaConFord = persons.filter(function(a) {
+      return a.car === cars[i].id;
+    })
+    personasConFord.push(personaConFord[0]);
+  }
+}
+console.log("Las personas con un coche de marca Ford son:");
+console.log(personasConFord);
+
+//- 7. ¡Bonus point! Obtén un array con todas las personas en el que cada persona tenga toda
+// *       la info de su coche. Ejemplo a continuación:
+
+const personas2 = [];
+for (let i = 0; i < persons.length; i++) {
+  for (let j = 0; j < cars.length; j++) {
+    if (persons[i].car === cars[j].id) {
+      personas2.push(persons[i]);
+      personas2[i].car = cars[j];
+    }
+  }
+}
+console.log("Las personas con la info de su coche incluida en el objeto son:");
+console.log(personas2);
+
+
+
+</code>
+</pre>
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="row" style="transform: translate(0px);transform-origin: bottom;">
+                <div class="col" style="transform-origin: bottom;">
+                    <footer class="footer-dark">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-3 item">
+                                    <h3>Services</h3>
+                                    <ul>
+                                        <li><a href="#">Web design</a></li>
+                                        <li><a href="#">Development</a></li>
+                                        <li><a href="#">Hosting</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-md-3 item">
+                                    <h3>About</h3>
+                                    <ul>
+                                        <li><a href="#">Company</a></li>
+                                        <li><a href="#">Team</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 item text">
+                                    <h3>Company Name</h3>
+                                    <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus.
+                                        Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget
+                                        velit pulvinar dictum vel in justo.</p>
+                                </div>
+                                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a
+                                        href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i
+                                            class="icon ion-social-snapchat"></i></a><a href="#"><i
+                                            class="icon ion-social-instagram"></i></a></div>
+                            </div>
+                            <p class="copyright">Company Name © 2022</p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+</body>
+
+</html>
